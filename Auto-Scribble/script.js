@@ -14,8 +14,10 @@ class Line {
         this.endX = Math.random() * this.canvas.width
         this.endY = Math.random() * this.canvas.height
         this.lineWidth = Math.floor(Math.random() * 15 + 1)
+        this.hue = Math.floor(Math.random() * 360)
     }
     draw(context) {
+        context.strokeStyle = 'hsl(' + this.hue + ', 100%, 50%)'
         context.lineWidth = this.lineWidth
         context.beginPath()
         context.moveTo(this.startX, this.startY)
