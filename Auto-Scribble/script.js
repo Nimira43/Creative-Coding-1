@@ -3,13 +3,12 @@ const ctx = canvas.getContext('2d')
 canvas.width = 700
 canvas.height = 900
 
-ctx.fillStyle = 'red'
-ctx.fillRect(100, 150, 200, 150)
 ctx.lineWidth = 10
-ctx.strokeStyle = 'blue'
-ctx.strokeRect(100, 150, 200, 150)
+ctx.strokeStyle = 'magenta'
 
 ctx.beginPath()
-ctx.moveTo(50, 300)
-ctx.lineTo(150, 700)
+ctx.moveTo(250, 700)
+ctx.lineTo(350, 600)
+ctx.lineTo(450, 700)
+ctx.lineTo(350, 800)
 ctx.stroke()
