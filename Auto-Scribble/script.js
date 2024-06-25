@@ -8,3 +8,8 @@ ctx.fillRect(100, 150, 200, 150)
 ctx.lineWidth = 10
 ctx.strokeStyle = 'blue'
 ctx.strokeRect(100, 150, 200, 150)
+
+ctx.beginPath()
+ctx.moveTo(50, 300)
+ctx.lineTo(150, 700)
+ctx.stroke()
