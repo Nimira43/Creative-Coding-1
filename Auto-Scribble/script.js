@@ -6,10 +6,22 @@ canvas.height = 900
 ctx.lineWidth = 10
 ctx.strokeStyle = 'magenta'
 
-ctx.beginPath()
-ctx.moveTo(350, 600)
-ctx.lineTo(450, 700)
-ctx.lineTo(350, 800)
-ctx.lineTo(150, 100)
-ctx.lineTo(250, 300)
-ctx.stroke()
+class Line {
+    constructor() {
+        this.startX = Math.random() * canvas.width
+        this.startY = Math.random() * canvas.height
+        this.endX = Math.random() * canvas.width
+        this.endY = Math.random() * canvas.height
+        this.lineWidth = Math.floor(Math.random() * 15 + 1)
+    }
+    draw() {
+        ctx.lineWidth = this.lineWidth
+        ctx.beginPath()
+        ctx.moveTo(this.startX, this.startY)
+        ctx.lineTo(this.endX, this.endY)
+        ctx.stroke()
+    }
+}
+
+const line1 = new Line()
+line1.draw()
