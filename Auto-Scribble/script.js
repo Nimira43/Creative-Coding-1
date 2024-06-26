@@ -26,5 +26,8 @@ class Line {
     }
 }
 
-const line1 = new Line(canvas)
-line1.draw(ctx)
+const linesArray = []
+for (let i = 0; i < 10; i++) {
+    linesArray.push(new Line(canvas))
+}
+
