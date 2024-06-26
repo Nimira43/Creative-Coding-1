@@ -27,7 +27,8 @@ class Line {
 }
 
 const linesArray = []
-for (let i = 0; i < 10; i++) {
+const numberOfLines = 50
+for (let i = 0; i < numberOfLines; i++) {
     linesArray.push(new Line(canvas))
 }
-
+linesArray.forEach(line => line.draw(ctx))
