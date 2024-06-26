@@ -37,4 +37,11 @@ const numberOfLines = 1
 for (let i = 0; i < numberOfLines; i++) {
     linesArray.push(new Line(canvas))
 }
-linesArray.forEach(line => line.draw(ctx))
+
+
+function animate() {
+    linesArray.forEach(line => line.draw(ctx))
+    requestAnimationFrame(animate)
+}
+
+animate()
