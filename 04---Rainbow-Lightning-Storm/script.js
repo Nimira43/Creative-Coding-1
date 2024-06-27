@@ -15,8 +15,8 @@ class Line {
         this.lineWidth = Math.floor(Math.random() * 15 + 1)
         this.hue = Math.floor(Math.random() * 360)
         this.maxLength = Math.floor(Math.random() * 150 + 10)
-        this.speedX = Math.random() * 5 - 2.5
-        this.speedY = 10
+        this.speedX = Math.random() * 1 - 0.5
+        this.speedY = 3
         this.lifeSpan = this.maxLength * 10
         this.timer = 0
     }
