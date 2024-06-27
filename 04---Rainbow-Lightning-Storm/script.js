@@ -15,8 +15,8 @@ class Line {
         this.lineWidth = Math.floor(Math.random() * 15 + 1)
         this.hue = Math.floor(Math.random() * 360)
         this.maxLangth = 10
-        this.speedX = 10
-        this.speedY = 5
+        this.speedX = 2
+        this.speedY = 15
     }
     draw(context) {
         context.strokeStyle = 'hsl(' + this.hue + ', 100%, 50%)'
