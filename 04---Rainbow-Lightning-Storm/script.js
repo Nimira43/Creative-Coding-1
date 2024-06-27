@@ -42,7 +42,7 @@ class Line {
         } else if (this.history.length <= 1) {
             this.reset()
         } else {
-            this.shift()
+            this.history.shift()
         }
     }
     reset() {
